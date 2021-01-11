@@ -1,0 +1,43 @@
+2)
+CALL BY VALUE:
+*While calling a function, when you pass values by copying variables, it is known as Call By Values.
+*In Call by value method original value is not modified.
+*In Call by value, a copy of the variable is passed.
+*In Call by value, actual and formal arguments will be created in different memory locations.
+*Call by value is the default method in programming languages like C++, PHP, Visual Basic NET, and C#.
+*Call by Value, variables are passed using a straightforward metho.
+       Example:-
+                        var name1="CLASS";
+                        var name2=name1;
+                        name1="ZEN";
+                       console.log(name1,name2);
+                        
+CALL BY REFERENCE:
+*While calling a function, in programming language instead of copying the values of variables, the address of the variables is used it is known as Call By References.
+* In Call by reference method, the original value is modified.
+ *In Call by reference, a variable itself is passed.
+ *In Call by reference, actual and formal arguments will be created in the same memory location.
+*Call by reference is supported only Java language.
+ *Call by Reference, pointers are required to store the address of variables.
+    Example:-
+                        var arr1=[1,2,3];
+                        var arr2=arr1;
+                        arr[0]=10;
+                       console.log(arr1,arr2);
+
+3)
+CALL BY VALUE  FOR A COMPOSITE NUMBER:
+ * Arrays and Objects can be classified as a composite data type in JavaScript.Actually composite data types are passed in by reference in practise.
+*In JAVASCRIPT,copying the composite data type by value is done by using Spread operator(...).
+  EXAMPLE:-
+  let arr=[1,2,3];
+ let b=(...arr);
+let c=arr;
+var c[0]=4;
+console.log(arr,b,c);
+O/P
+[4,2,3] 1 2 3 [4,2,3]
+*In the example, the "b" has the elements of "arr" copied into it. Any changes made to "arr" will not be reflected in "b" and vice versa.
+*In the same program, "c" which is copied as a reference had its value changed and the changes made in one array would reflect in the other array which in most cases is undesirable.
+*Hence with the help of Spread operator(…) ,we can copy by value for composite data types.
+                        
